@@ -13,6 +13,9 @@ public class Person {
 
     private int age;
 
+
+    private int score;
+
     public Person() {
 
     }
@@ -35,11 +38,21 @@ public class Person {
         return this;
     }
 
+    public int getScore() {
+        return score;
+    }
+
+    public Person setScore(int score) {
+        this.score = score;
+        return this;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", score=" + score +
                 '}';
     }
 }
