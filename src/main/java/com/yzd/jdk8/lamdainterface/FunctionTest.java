@@ -18,7 +18,9 @@ public class FunctionTest {
         System.out.println(compute(4, value -> value / 2));
         Function<Integer, Integer> function = value -> value + 1;
         System.out.println(compute(4, function));
+
     }
+
 
     public static int compute(int a, Function<Integer, Integer> function) {
         return function.apply(a);
