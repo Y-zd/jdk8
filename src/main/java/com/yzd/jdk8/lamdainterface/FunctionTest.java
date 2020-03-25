@@ -26,5 +26,5 @@ public class FunctionTest {
         return function.apply(a);
     }
 
-    
+
 }
