@@ -54,7 +54,7 @@ public class StreamTest7 {
         //字符串拼接
         System.out.println(personList.stream().map(Person::getName).collect(Collectors.joining()));
         System.out.println(personList.stream().map(Person::getName).collect(Collectors.joining(",")));
-        System.out.println(personList.stream().map(Person::getName).collect(Collectors.joining(",","《","》")));
+        System.out.println(personList.stream().map(Person::getName).collect(Collectors.joining(",", "《", "》")));
         System.out.println("----------------------------------");
 
         //多级分组
@@ -71,6 +71,23 @@ public class StreamTest7 {
         Map<Integer, Optional<Person>> collect8 = personList.stream()
                 .collect(Collectors.groupingBy(Person::getAge, Collectors.minBy(Comparator.comparing(Person::getScore))));
         System.out.println(collect8);
+
+        //排序map
+        Map<Integer, Integer> testMap = new HashMap<>();
+        testMap.put(1, 1);
+        testMap.put(3, 1);
+        testMap.put(5, 2);
+        testMap.put(2, 10);
+        testMap.put(10, 0);
+        testMap.put(10, 2);
+        Map<Integer, Integer> sortedMap = new HashMap<>();
+
+        testMap.entrySet().stream()
+                .sorted(Map.Entry.comparingByValue())
+                .sorted(Map.Entry.comparingByKey()).forEach(e -> sortedMap.put(e.getKey(), e.getValue()));
+        sortedMap.forEach((k, v) -> System.out.println("key:value = " + k + ":" + v));
+
+
     }
 
 }

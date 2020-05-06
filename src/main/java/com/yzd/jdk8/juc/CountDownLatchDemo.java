@@ -11,7 +11,7 @@ import java.util.concurrent.CountDownLatch;
  */
 public class CountDownLatchDemo {
     public static void main(String[] args) {
-        CountDownLatch countDownLatch = new CountDownLatch(4);
+        CountDownLatch countDownLatch = new CountDownLatch(3);
         new Thread(() -> {
             System.out.println("thread1");
             countDownLatch.countDown();//3-1=2
@@ -27,8 +27,12 @@ public class CountDownLatchDemo {
         }).start();
         try {
             countDownLatch.await();//如果count没减到0 不往后执行
-        } catch (InterruptedException e) {
+            System.out.println(1/0);
+        } catch (Exception e) {
+            System.out.println(1231231);
             e.printStackTrace();
+            System.out.println(00000);
         }
+        System.out.println(2222);
     }
 }
