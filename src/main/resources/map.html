@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>map</title>
+    <script type="text/javascript"
+            src="https://webapi.amap.com/maps?v=1.4.15&key=852940840ce9b082182c452b3647ee71"></script>
+    <style type="text/css">
+        #container {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+<div id="container">
+
+</div>
+</body>
+
+<script type="text/javascript">
+    var map = new AMap.Map('container', {
+        zoom: 11,//级别
+        center: [104.065113, 30.656048]//中心点坐标
+    });
+    var marker1 = new AMap.Marker({
+        position: new AMap.LngLat(104.074073, 30.640473),
+        title: '四川省直属机关实验婴儿园'
+    });map.add(marker1);
+
+    var marker2 = new AMap.Marker({
+        position: new AMap.LngLat(104.083343, 30.661519),
+        title: '四川省直属机关红星幼儿园'
+    });map.add(marker2);
+
+    var marker3 = new AMap.Marker({
+        position: new AMap.LngLat(104.046904, 30.672558),
+        title: '成都市金牛区机关第三幼儿园'
+    });map.add(marker3);
+
+    var marker4 = new AMap.Marker({
+        position: new AMap.LngLat(104.054553, 30.670532),
+        title: '四川省直属机关西马鹏幼儿园'
+    });map.add(marker4);
+
+    var marker5 = new AMap.Marker({
+        position: new AMap.LngLat(104.078834,30.670029),
+        title: '四川省直属机关玉泉幼儿园'
+    });map.add(marker5);
+
+    var marker6 = new AMap.Marker({
+        position: new AMap.LngLat(104.071971,30.64894),
+        title: '四川省直属机关东府幼儿园'
+    });map.add(marker6);
+
+    var marker7 = new AMap.Marker({
+        position: new AMap.LngLat(104.080266, 30.672102),
+        title: '四川省军区机关幼儿园'
+    });map.add(marker7);
+
+    var marker8 = new AMap.Marker({
+        position: new AMap.LngLat(104.053992,30.646723),
+        title: '成都军区空军第二幼儿园'
+    });
+    map.add(marker8);
+
+    var marker9 = new AMap.Marker({
+        position: new AMap.LngLat(104.076777,30.614097),
+        title: '西部战区空军直属机关幼儿园'
+    });
+    map.add(marker9);
+
+    var marker10 = new AMap.Marker({
+        position: new AMap.LngLat(104.118619,30.743427),
+        title: '人名解放军总参谋部第五十七研究所幼儿园'
+    });
+    map.add(marker10);
+
+    var marker11 = new AMap.Marker({
+        position: new AMap.LngLat(104.100332,30.660277),
+        title: '成都市第二十六幼儿园'
+    });
+    map.add(marker11);
+
+    var marker12 = new AMap.Marker({
+        position: new AMap.LngLat(104.071573,30.688532),
+        title: '成都市第十七幼儿园'
+    });
+    map.add(marker12);
+
+    var marker13 = new AMap.Marker({
+        position: new AMap.LngLat(104.024339,30.645902),
+        title: '成都市第十幼儿园'
+    });
+    map.add(marker13);
+
+    var marker14 = new AMap.Marker({
+        position: new AMap.LngLat(104.079218,30.649972),
+        title: '成都市第一幼儿园'
+    });
+    map.add(marker14);
+
+    var marker15 = new AMap.Marker({
+        position: new AMap.LngLat(104.069849,30.661537),
+        title: '成都市第二幼儿园'
+    });
+    map.add(marker15);
+
+    var marker16 = new AMap.Marker({
+        position: new AMap.LngLat(104.035094,30.680908),
+        title: '成都市市级机关第二幼儿园'
+    });
+    map.add(marker16);
+
+    var marker17 = new AMap.Marker({
+        position: new AMap.LngLat(104.084466,30.659767),
+        title: '成都市第三幼儿园'
+    });
+    map.add(marker17);
+
+    var marker18 = new AMap.Marker({
+        position: new AMap.LngLat(104.273404,30.556103),
+        title: '成都市龙泉驿区机关幼儿园'
+    });
+    map.add(marker18);
+
+
+</script>
+</html>
+
