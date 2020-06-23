@@ -20,7 +20,7 @@ public class HotSwapAgent {
         DataInputStream dis = null;
         try {
             // 通过反射，拿到需要更新的数据
-            clz = Class.forName("com.eaxmple.hotswap.HotSwapService");
+            clz = Class.forName("com.yzd.attach.HotSwapService");
             Field field = clz.getField("updateBytes");
             byte[] updateBytes = (byte[]) field.get(null);
 
