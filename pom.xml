@@ -11,8 +11,6 @@
 
     <modules>
         <module>jdk8-learn</module>
-        <module>jvm-attach</module>
-        <module>hotswap</module>
     </modules>
     <build>
         <plugins>
