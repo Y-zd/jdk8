@@ -49,7 +49,7 @@ public class StreamTest7 {
         //求分数的总合
         IntSummaryStatistics collect5 = personList.stream().collect(Collectors.summarizingInt(Person::getScore));
         System.out.println(collect5);
-        System.out.println("----------------------------------");
+        System.out.println("collect5----------------------------------");
 
         //字符串拼接
         System.out.println(personList.stream().map(Person::getName).collect(Collectors.joining()));

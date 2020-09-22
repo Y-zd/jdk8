@@ -1,0 +1,21 @@
+package com.yzd.design_pattern.观察者;
+
+/***
+ *
+ * @author : yanzhidong
+ * @date : 2020/9/7 
+ * @version : V1.0
+ *
+ */
+public class Main {
+    public static void main(String[] args) {
+        // 先定义一个主题
+        Subject subject1 = new Subject();
+        // 定义观察者
+        new BinaryObserver(subject1);
+        new HexaObserver(subject1);
+
+        // 模拟数据变更，这个时候，观察者们的 update 方法将会被调用
+        subject1.setState(11);
+    }
+}
